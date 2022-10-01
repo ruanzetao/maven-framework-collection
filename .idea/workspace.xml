@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init BasePage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init Suite_01_Register_Account">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserDrivers/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserDrivers/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,11 +49,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources"
+    "last_directory_selection": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/commons",
+    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/browserDrivers",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\test\resources" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\orangehrm" />
     </key>
@@ -74,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664612604374</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Framework: init Suite_01_Register_Account">
+      <created>1664613079997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664613079997</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +111,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Framework: config pom.xml" />
     <MESSAGE value="Framework: init BasePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init BasePage" />
+    <MESSAGE value="Framework: init Suite_01_Register_Account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init Suite_01_Register_Account" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
