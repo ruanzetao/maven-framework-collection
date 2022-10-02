@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init Suite_01_Register_Account">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/browserDrivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/browserDrivers/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: update BasePage">
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/TestNGAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/VerificationFailures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/HomePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/PageGeneratorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/RegisterPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/BasePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/RegisterPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest_RegisterAccount.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2FWXSZlltLpxYJSOCX1xaHBmKMV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/commons",
-    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/browserDrivers",
+    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -59,10 +70,42 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\test\resources" />
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\commons" />
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\orangehrm" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nopcommerce.user" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNopCommerceTest_RegisterAccount.xml">
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNopCommerceTest_RegisterAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="maven-framework-collection" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNopCommerceTest_RegisterAccount.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNopCommerceTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="maven-framework-collection" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNopCommerceTest_RegisterAccount.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNopCommerceTest.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664613079997</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Framework: update BasePage">
+      <created>1664643911164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664643911164</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +162,8 @@
     <MESSAGE value="Framework: config pom.xml" />
     <MESSAGE value="Framework: init BasePage" />
     <MESSAGE value="Framework: init Suite_01_Register_Account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init Suite_01_Register_Account" />
+    <MESSAGE value="Framework: update BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: update BasePage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
