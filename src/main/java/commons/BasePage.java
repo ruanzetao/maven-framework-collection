@@ -1,5 +1,7 @@
 package commons;
 
+import nopcommerce.pageObjects.HomePageObject;
+import nopcommerce.pageObjects.PageGeneratorManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
@@ -428,19 +430,6 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
-	//Pattern Objects
-	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
-		waitForAllElementsVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
-		sendKeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
-	}
-	public void clickToButtonByText(WebDriver driver, String buttonText) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
-		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
-	}
-	public void selectDropdownByName(WebDriver driver, String dropdownAttribute, String itemValue) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttribute);
-		selectItemDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttribute);
-	}
 	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key) {
 		Actions action = new Actions(driver);
 		action.sendKeys(getWebElement(driver, locatorType), key).perform();
@@ -479,6 +468,20 @@ public class BasePage {
 	}
 	public Set<Cookie> getAllCookies(WebDriver driver) {
 		return driver.manage().getCookies();
+	}
+	//Functions common:
+	//Pattern Objects
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		waitForAllElementsVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendKeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+	}
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+	}
+	public void selectDropdownByName(WebDriver driver, String dropdownAttribute, String itemValue) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttribute);
+		selectItemDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttribute);
 	}
 
 }
