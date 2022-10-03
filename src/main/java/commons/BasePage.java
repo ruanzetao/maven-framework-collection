@@ -469,7 +469,6 @@ public class BasePage {
 	public Set<Cookie> getAllCookies(WebDriver driver) {
 		return driver.manage().getCookies();
 	}
-	//Functions common:
 	//Pattern Objects
 	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
 		waitForAllElementsVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
