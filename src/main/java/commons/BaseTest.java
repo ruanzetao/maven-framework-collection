@@ -30,9 +30,13 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName) {
 		if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("ie")) {
 			WebDriverManager.iedriver().setup();
@@ -40,7 +44,7 @@ public class BaseTest {
 		} else if (browserName.equals("cheadless")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headleass");
+			options.addArguments("--headleass");
 			options.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(options);
 		}
@@ -52,9 +56,13 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("ie")) {
 			WebDriverManager.iedriver().setup();
