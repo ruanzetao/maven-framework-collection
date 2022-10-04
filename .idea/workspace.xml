@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init Helper for project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/AllureTestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentReportListenerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentTestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ReportNGListener.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init reportConfigs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664873754766</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Framework: init reportConfigs">
+      <created>1664873936438</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664873936438</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +266,8 @@
     <MESSAGE value="Framework: init DataHelper" />
     <MESSAGE value="Framework: generate fake data with DataHelper" />
     <MESSAGE value="Framework: init Helper for project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init Helper for project" />
+    <MESSAGE value="Framework: init reportConfigs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init reportConfigs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
