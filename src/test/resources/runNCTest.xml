@@ -4,7 +4,7 @@
         <parameter name="browser" value="firefox"/>
 
         <classes>
-            <class name="com.nopcommerce.user.Suite_01_Register_Account"/>
+            <class name="com.nopcommerce.user.Suite_01_Register_Account_Faker"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
