@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: generate fake emails and numbers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/DataHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/javaTester/javaBasic/Topic_19_Faker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init DataHelper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664862771759</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Framework: init DataHelper">
+      <created>1664872877746</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664872877746</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +242,8 @@
     <MESSAGE value="Framework: disable Browser log" />
     <MESSAGE value="Framework: init My Account page objects and page UIs" />
     <MESSAGE value="Framework: generate fake emails and numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: generate fake emails and numbers" />
+    <MESSAGE value="Framework: init DataHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init DataHelper" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -59,7 +59,7 @@ public class Suite_01_Register_Account_Faker extends BaseTest {
 		log.info("Step: Input to LastName textbox: " + lastName);
 		registerPage.inputToLastNameTextbox("XSang");
 		//Missing @ at email
-		String invalidEmail = "xansanafc" + generateFakeNumber() + "mailinator.com";
+		String invalidEmail = "seleniumonline" + generateFakeNumber() + "mailinator.com";
 		log.info("Step: Input to Email textbox: " + invalidEmail);
 		registerPage.inputToEmailTextbox(invalidEmail);
 		log.info("Step: Input to Password textbox");
@@ -118,7 +118,7 @@ public class Suite_01_Register_Account_Faker extends BaseTest {
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		//Missing @ at email
-		registerPage.inputToEmailTextbox("afcxansan" + generateFakeNumber() + "@mailinator.com");
+		registerPage.inputToEmailTextbox("seleniumonline" + generateFakeNumber() + "@mailinator.com");
 		String invalidPassword = "1235";
 		log.info("Input to Password textbox: " + invalidPassword);
 		registerPage.inputToPasswordTextbox(invalidPassword);
@@ -135,7 +135,7 @@ public class Suite_01_Register_Account_Faker extends BaseTest {
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		//Missing @ at email
-		registerPage.inputToEmailTextbox("afcxansan" + generateFakeNumber() + "@mailinator.com");
+		registerPage.inputToEmailTextbox("seleniumonline" + generateFakeNumber() + "@mailinator.com");
 		String invalidPassword = "1235";
 		registerPage.inputToPasswordTextbox(invalidPassword);
 		log.info("Input to ConfirmPassword textbox");
