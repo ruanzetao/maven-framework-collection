@@ -13,6 +13,7 @@ import org.testng.Reporter;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -134,10 +135,6 @@ public class BaseTest {
 	protected boolean verifyEquals(Object actual, Object expected) {
 		return checkEquals(actual, expected);
 	}
-	public int generateFakeNumber() {
-		Random rand = new Random();
-		return (int) rand.nextInt(9999);
-	}
 	// @BeforeSuite
 	public void deleteAllFilesInReportNGScreenshot() {
 		System.out.println("---------- START delete file in folder ----------");
@@ -216,6 +213,29 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}
+	}
+	//Generate fake number
+	public int generateFakeNumber() {
+		Random rand = new Random();
+		return (int) rand.nextInt(9999);
+	}
+	//Random 3 numbers
+	public static int getRandomNumber() {
+		int uLimit = 999;
+		int lLimit = 100;
+		Random rand = new Random();
+		return lLimit + rand.nextInt(uLimit - lLimit);
+	}
+	//Range (minimun-maximum)
+	public static int gerRanDomNumber(int minimun, int maximum) {
+		Random rand = new Random();
+		return minimun + rand.nextInt(maximum - minimun);
+	}
+	public static String getRandomEmail() {
+		return "seleniumonline" + getRandomNumberByDateTime() + "@mailinator.com";
+	}
+	public static long getRandomNumberByDateTime() {
+		return Calendar.getInstance().getTimeInMillis() % 100000;
 	}
 
 }
