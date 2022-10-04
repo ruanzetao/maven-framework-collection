@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init reportConfigs">
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init TCs for My Account">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/HomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/MyAccountPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/MyAccountPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/PageGeneratorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/PageGeneratorManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/BasePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/BasePageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/MyAccountPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/MyAccountPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/commons",
-    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/reportConfigs",
+    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -55,9 +67,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\test\resources" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\reportConfigs" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\utilities" />
-      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\test\resources" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\commons" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
     </key>
@@ -67,23 +79,10 @@
       <recent name="nopcommerce.pageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest.xml">
-    <configuration name="Topic_19_Faker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaBasic.Topic_19_Faker" />
+  <component name="RunManager" selected="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_MyAccount.xml">
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_MyAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maven-framework-collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaBasic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_LoginAccount_Log.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="maven-framework-collection" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_LoginAccount_Log.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -101,9 +100,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount_ReportNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maven-framework-collection" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_ReportNG.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_Register_Login_Log.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="maven-framework-collection" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -123,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest.xml" />
-        <item itemvalue="Application.Topic_19_Faker" />
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_LoginAccount_Log.xml" />
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount_ReportNG.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_MyAccount.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_Register_Login_Log.xml" />
         <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount_Log.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664873936438</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Framework: init TCs for My Account">
+      <created>1664876197107</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664876197107</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +283,8 @@
     <MESSAGE value="Framework: generate fake data with DataHelper" />
     <MESSAGE value="Framework: init Helper for project" />
     <MESSAGE value="Framework: init reportConfigs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init reportConfigs" />
+    <MESSAGE value="Framework: init TCs for My Account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init TCs for My Account" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
