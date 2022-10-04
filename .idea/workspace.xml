@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: generate fake data with DataHelper" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init Helper for project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/AllureTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentReportListenerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ReportNGListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/commons",
-    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources",
+    "last_opened_file_path": "D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/main/java/reportConfigs",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -53,10 +60,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\reportConfigs" />
+      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\utilities" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\test\resources" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\commons" />
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
-      <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\src\main\java\orangehrm" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nopcommerce.user" />
@@ -221,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664873038561</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Framework: init Helper for project">
+      <created>1664873754766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664873754766</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +263,8 @@
     <MESSAGE value="Framework: generate fake emails and numbers" />
     <MESSAGE value="Framework: init DataHelper" />
     <MESSAGE value="Framework: generate fake data with DataHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: generate fake data with DataHelper" />
+    <MESSAGE value="Framework: init Helper for project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init Helper for project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
