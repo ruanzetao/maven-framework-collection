@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init TCs for My Account">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: update TCs: update My Account information, fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/HomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/MyAccountPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/MyAccountPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/PageGeneratorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageObjects/PageGeneratorManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/BasePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/BasePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/MyAccountPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pageUIs/MyAccountPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reportConfigs/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664876197107</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Framework: update TCs: update My Account information, fix bugs">
+      <created>1664900203005</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664900203005</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,7 +279,8 @@
     <MESSAGE value="Framework: init Helper for project" />
     <MESSAGE value="Framework: init reportConfigs" />
     <MESSAGE value="Framework: init TCs for My Account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init TCs for My Account" />
+    <MESSAGE value="Framework: update TCs: update My Account information, fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: update TCs: update My Account information, fix bugs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
