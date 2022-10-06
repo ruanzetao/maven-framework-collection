@@ -2,9 +2,8 @@ package utilities;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
-public class SQLServerJTDSConnUtils {
+public class SQLServerConnUtils {
 
 	public static Connection getSQLServerConnection() {
 		String hostName = "localhost";
@@ -19,7 +18,7 @@ public class SQLServerJTDSConnUtils {
 		Connection connection = null;
 		try {
 			Class.forName("net.sourceforge.jtds.jdbc.Driver");
-			String connectionUrl = "jdbc:sqlserver://" + hostName + ":1433/" + dbName + ";instance=" + sqlInstanceName;
+			String connectionUrl = "jdbc:jtds:sqlserver://" + hostName + ":1433/" + dbName + ";instance=" + sqlInstanceName;
 			connection = DriverManager.getConnection(connectionUrl, username, password);
 		} catch (Exception e) {
 			e.printStackTrace();

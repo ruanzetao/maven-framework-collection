@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init TCs for Database Testing SQL">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/MySQLUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/SQLServerJTDSConnUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaTCs/MySQLTestConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaTCs/SQLServerJTDSTestConnection.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: update TCs for Database Testing SQL, MySQL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/testData/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/SQLServerConnUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaTCs/SQLServerJDBCTestConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/javaTCs/Suite_01_Database_Testing_SQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/SQLServerJTDSConnUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/SQLServerJTDSConnUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664939006036</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Framework: update TCs for Database Testing SQL, MySQL">
+      <created>1664965311467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664965311467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -308,7 +312,8 @@
     <MESSAGE value="Framework: init TCs for My Account" />
     <MESSAGE value="Framework: update TCs: update My Account information, fix bugs" />
     <MESSAGE value="Framework: init TCs for Database Testing SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init TCs for Database Testing SQL" />
+    <MESSAGE value="Framework: update TCs for Database Testing SQL, MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: update TCs for Database Testing SQL, MySQL" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
