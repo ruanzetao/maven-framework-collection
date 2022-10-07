@@ -4,7 +4,7 @@
         <parameter name="browserName" value="firefox"/>
 
         <classes>
-            <class name="com.nopcommerce.user.Suite_00_Check_Environment_Refactor"/>
+            <class name="com.nopcommerce.user.Suite_00_Check_Environment"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,28 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init DataTest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BROWSER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BrowserStackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/CrossBrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/ENVIRONMENT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/GridFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/LambdaFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/LocalFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/SauceLabFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment_Refactor.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: refactor for multiple environment.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTestFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/BROWSER_LIST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/BrowserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/BrowserNotSupportedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/ChromeDriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/FirefoxDriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/IEDriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BrowserStackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/BrowserStackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/CrossBrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/CrossBrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/ENVIRONMENT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/ENVIRONMENT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/GridFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/GridFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/LambdaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/LambdaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/LocalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/LocalFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/SauceLabFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factoryBrowser/SauceLabFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment_Refactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment_Refactor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_02_Login_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_02_Login_Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_LoginAccount_Log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_LoginAccount_Log.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_Log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_Log.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_ReportNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_ReportNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +81,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -83,6 +93,7 @@
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="commons" />
       <recent name="com.nopcommerce.user" />
       <recent name="com.javaTCs" />
       <recent name="nopcommerce.pageUIs" />
@@ -305,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665037774062</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Framework: refactor for multiple environment.">
+      <created>1665131733289</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665131733289</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -345,7 +363,8 @@
     <MESSAGE value="Framework: init TCs for Database Testing SQL" />
     <MESSAGE value="Framework: update TCs for Database Testing SQL, MySQL" />
     <MESSAGE value="Framework: init DataTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: init DataTest" />
+    <MESSAGE value="Framework: refactor for multiple environment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: refactor for multiple environment." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

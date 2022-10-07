@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="NopCommerce Register Account">
     <test name="Run on Firefox">
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browserName" value="firefox"/>
         <listeners>
             <listener class-name="org.uncommons.reportng.HTMLReporter"/>
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>

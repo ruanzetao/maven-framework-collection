@@ -1,4 +1,4 @@
-package commons;
+package factoryBrowser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
@@ -13,7 +13,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Driver;
 
 public class GridFactory {
 
@@ -29,9 +28,9 @@ public class GridFactory {
 	}
 
 	public WebDriver createDriver() {
-		BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
+		BROWSER_LIST browser = BROWSER_LIST.valueOf(browserName.toUpperCase());
 		DesiredCapabilities capability = null;
-		if (browser == BROWSER.FIREFOX) {
+		if (browser == BROWSER_LIST.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
 			capability = DesiredCapabilities.firefox();
 			capability.setBrowserName("firefox");
@@ -41,7 +40,7 @@ public class GridFactory {
 //			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 //			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 			driver = new FirefoxDriver(options);
-		} else if (browser == BROWSER.CHROME) {
+		} else if (browser == BROWSER_LIST.CHROME) {
 			WebDriverManager.chromedriver().setup();
 			capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
@@ -51,7 +50,7 @@ public class GridFactory {
 //			System.setProperty("webdriver.chrome.args", "--disable-logging");
 //			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver(options);
-		} else if (browser == BROWSER.IE) {
+		} else if (browser == BROWSER_LIST.IE) {
 			WebDriverManager.iedriver().setup();
 			capability = DesiredCapabilities.internetExplorer();
 			capability.setBrowserName("internetexplorer");

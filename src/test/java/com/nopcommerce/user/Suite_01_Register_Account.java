@@ -17,13 +17,11 @@ public class Suite_01_Register_Account extends BaseTest {
 	String validEmail = "afcxansan" + generateFakeNumber() + "@mailinator.com";
 	String validPassword = "Abc@123";
 
-	@Parameters({"envName", "serverName", "browserName", "ipAddress", "portNumber", "osName", "osVersion"})
+	@Parameters("browserName")
 	@BeforeClass
-	public void beforeClass(@Optional("local") String envName, @Optional("TESTING") String serverName, @Optional("firefox") String browserName
-			, @Optional("localhost") String ipAddress, @Optional("4444") String portNumber,
-			                @Optional("Windows") String osName, @Optional("10") String osVersion) {
+	public void beforeClass(String browserName) {
 		System.out.println("Browser name: " + browserName);
-		getBrowserDriver(envName, serverName, browserName, ipAddress, portNumber, osName, osVersion);
+		getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 

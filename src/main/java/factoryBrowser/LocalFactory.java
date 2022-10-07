@@ -1,5 +1,6 @@
-package commons;
+package factoryBrowser;
 
+import commons.GlobalConstants;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,21 +18,21 @@ public class LocalFactory {
 	}
 
 	public WebDriver createWebDriver() {
-		BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
-		if (browser == BROWSER.FIREFOX) {
+		BROWSER_LIST browser = BROWSER_LIST.valueOf(browserName.toUpperCase());
+		if (browser == BROWSER_LIST.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
 			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 			driver = new FirefoxDriver();
-		} else if (browser == BROWSER.CHROME) {
+		} else if (browser == BROWSER_LIST.CHROME) {
 			WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.args", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver();
-		} else if (browser == BROWSER.IE) {
+		} else if (browser == BROWSER_LIST.IE) {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
-		} else if (browser == BROWSER.H_CHROME) {
+		} else if (browser == BROWSER_LIST.H_CHROME) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headleass");
