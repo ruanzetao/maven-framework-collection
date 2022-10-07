@@ -4,12 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: update TCs for Database Testing SQL, MySQL">
-      <change afterPath="$PROJECT_DIR$/src/main/java/testData/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/SQLServerConnUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaTCs/SQLServerJDBCTestConnection.java" afterDir="false" />
+    <list default="true" id="7c74d897-4450-4fdd-9da9-908cc6c8849f" name="Changes" comment="Framework: init DataTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BROWSER.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BrowserStackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/CrossBrowserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/ENVIRONMENT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/GridFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/LambdaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/LocalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/SauceLabFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment_Refactor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/SQLServerJTDSConnUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/SQLServerJTDSConnUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_00_Check_Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_01_Register_Account_Faker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_02_Login_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_02_Login_Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_03_My_Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nopcommerce/user/Suite_04_Register_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -66,13 +83,13 @@
       <recent name="D:\eclipse-java\maven-framework-collection\maven-framework-collection\browserDrivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.javaTCs" />
       <recent name="com.nopcommerce.user" />
+      <recent name="com.javaTCs" />
       <recent name="nopcommerce.pageUIs" />
       <recent name="nopcommerce.pageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SQLServerJTDSTestConnection">
+  <component name="RunManager" selected="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount.xml">
     <configuration name="MySQLTestConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javaTCs.MySQLTestConnection" />
       <module name="maven-framework-collection" />
@@ -99,9 +116,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_MyAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maven-framework-collection" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_MyAccount.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -109,9 +126,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount_Log.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maven-framework-collection" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_RegisterAccount_Log.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -119,10 +136,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_Register_Login_Log.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Suite_00_Check_Environment_Refactor" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maven-framework-collection" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runNCTest_Register_Login_Log.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nopcommerce.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nopcommerce.user" />
+      <option name="MAIN_CLASS_NAME" value="com.nopcommerce.user.Suite_00_Check_Environment_Refactor" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount.xml" />
+        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest.xml" />
+        <item itemvalue="TestNG.Suite_00_Check_Environment_Refactor" />
         <item itemvalue="Application.SQLServerJTDSTestConnection" />
         <item itemvalue="Application.MySQLTestConnection" />
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_MyAccount.xml" />
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_Register_Login_Log.xml" />
-        <item itemvalue="TestNG.D:/eclipse-java/maven-framework-collection/maven-framework-collection/src/test/resources/runNCTest_RegisterAccount_Log.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664965311467</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Framework: init DataTest">
+      <created>1665037774062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665037774062</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -313,7 +344,18 @@
     <MESSAGE value="Framework: update TCs: update My Account information, fix bugs" />
     <MESSAGE value="Framework: init TCs for Database Testing SQL" />
     <MESSAGE value="Framework: update TCs for Database Testing SQL, MySQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework: update TCs for Database Testing SQL, MySQL" />
+    <MESSAGE value="Framework: init DataTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework: init DataTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ServiceConfigurationError" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

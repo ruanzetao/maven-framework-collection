@@ -1,13 +1,8 @@
 package commons;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -21,65 +16,60 @@ public class BaseTest {
 
 	protected WebDriver driver;
 	protected final Log log;
+
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
+
 	public WebDriver getDriverInstance() {
 		return driver;
 	}
-	//Nếu dùng từ version 5x trở lên thì không phải new driver lên nữa : => WebDriverManager.chromedriver().create();
-	protected WebDriver getBrowserDriver(String browserName) {
-		if (browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
-			driver = new FirefoxDriver();
-		} else if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.args", "--disable-logging");
-			System.setProperty("webdriver.chrome.silentOutput", "true");
-			driver = new ChromeDriver();
-		} else if (browserName.equals("ie")) {
-			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
-		} else if (browserName.equals("cheadless")) {
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headleass");
-			options.addArguments("window-size=1920x1080");
-			driver = new ChromeDriver(options);
+
+	protected WebDriver getBrowserDriver(String envName, String serverName, String browserName, String ipAddress, String portNumber, String osName, String osVersion) {
+		switch (envName) {
+			case "local":
+				driver = new LocalFactory(browserName).createWebDriver();
+				break;
+			case "grid":
+				driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
+				break;
+			case "browserStack":
+				driver = new BrowserStackFactory(browserName, osName, osVersion).createWebDriver();
+				break;
+			case "saucelab":
+				driver = new SauceLabFactory(browserName, osName).createDriver();
+				break;
+			case "crossBrowser":
+				driver = new CrossBrowserFactory(browserName, osName).createDriver();
+				break;
+			case "lambda":
+				driver = new LambdaFactory(browserName, osName).createDriver();
+				break;
+			default:
+				driver = new LocalFactory(browserName).createWebDriver();
+				break;
 		}
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(GlobalConstants.PORTAL_TESTING_URL);
+		driver.get(getEnvironmentValue(serverName));
 		return driver;
 	}
-	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
-		if (browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
-			driver = new FirefoxDriver();
-		} else if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.args", "--disable-logging");
-			System.setProperty("webdriver.chrome.silentOutput", "true");
-			driver = new ChromeDriver();
-		} else if (browserName.equals("ie")) {
-			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
-		} else if (browserName.equals("cheadless")) {
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headleass");
-			options.addArguments("window-size=1920x1080");
-			driver = new ChromeDriver(options);
+
+	protected String getEnvironmentValue(String envName) {
+		String envUrl = null;
+		ENVIRONMENT environment = ENVIRONMENT.valueOf(envName.toUpperCase());
+		if (environment == ENVIRONMENT.DEV) {
+			envUrl = "https://demo.guru99.com/v1";
+		} else if (environment == ENVIRONMENT.TESTING) {
+			envUrl = GlobalConstants.PORTAL_TESTING_URL;
+		} else if (environment == ENVIRONMENT.STAGING) {
+			envUrl = "https://demo.guru99.com/v3";
+		} else if (environment == ENVIRONMENT.PRODUCTION) {
+			envUrl = "https://demo.guru99.com/v4";
 		}
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get(appUrl);
-		return driver;
+		return envUrl;
 	}
+
 	private boolean checkTrue(boolean condition) {
 		boolean pass = true;
 		try {
@@ -97,9 +87,11 @@ public class BaseTest {
 		}
 		return pass;
 	}
+
 	protected boolean verifyTrue(boolean condition) {
 		return checkTrue(condition);
 	}
+
 	protected boolean checkFailed(boolean condition) {
 		boolean pass = true;
 		try {
@@ -116,9 +108,11 @@ public class BaseTest {
 		}
 		return pass;
 	}
+
 	protected boolean verifyFalse(boolean condition) {
 		return checkFailed(condition);
 	}
+
 	protected boolean checkEquals(Object actual, Object expected) {
 		boolean pass = true;
 		try {
@@ -132,15 +126,18 @@ public class BaseTest {
 		}
 		return pass;
 	}
+
 	protected boolean verifyEquals(Object actual, Object expected) {
 		return checkEquals(actual, expected);
 	}
+
 	// @BeforeSuite
 	public void deleteAllFilesInReportNGScreenshot() {
 		System.out.println("---------- START delete file in folder ----------");
 		deleteAllFileInFolder();
 		System.out.println("---------- END delete file in folder ----------");
 	}
+
 	public void deleteAllFileInFolder() {
 		try {
 			String workingDir = System.getProperty("user.dir");
@@ -157,6 +154,7 @@ public class BaseTest {
 			System.out.print(e.getMessage());
 		}
 	}
+
 	protected void closeBrowserAndDriver() {
 		String cmd = "";
 		try {
@@ -214,11 +212,13 @@ public class BaseTest {
 			}
 		}
 	}
+
 	//Generate fake number
 	public int generateFakeNumber() {
 		Random rand = new Random();
 		return (int) rand.nextInt(9999);
 	}
+
 	//Random 3 numbers
 	public static int getRandomNumber() {
 		int uLimit = 999;
@@ -226,14 +226,17 @@ public class BaseTest {
 		Random rand = new Random();
 		return lLimit + rand.nextInt(uLimit - lLimit);
 	}
+
 	//Range (minimun-maximum)
 	public static int gerRanDomNumber(int minimun, int maximum) {
 		Random rand = new Random();
 		return minimun + rand.nextInt(maximum - minimun);
 	}
+
 	public static String getRandomEmail() {
 		return "seleniumonline" + getRandomNumberByDateTime() + "@mailinator.com";
 	}
+
 	public static long getRandomNumberByDateTime() {
 		return Calendar.getInstance().getTimeInMillis() % 100000;
 	}
